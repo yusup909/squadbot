@@ -7,34 +7,35 @@ let handler = async (m) => {
     else who = m.sender
     let user = global.db.data.users[who]
 let premium = `
-*SHIRAORI BOT PRICE*
+*THIS BOT PRICE*
 
 ◩ *FREE USER*
-└───────
- └❎ Unlimited Limit
- └❎ Premium User 
- └❎ Add Bot to Group 
+ ❎ Unlimited Limit
+ ❎ Premium User 
+ ❎ Add Bot to Group 
   
 ◩ *PREMIUM USER*
-└───────
- └✅ Unlimited Limit 
- └✅ Premium User 
- └❎ Add Bot to Group 
-   └  ▹  *Rp. 5.000*
-     └ Expired 3 hari
- └ Order | hub : owner
+ ✅ Unlimited Limit 
+ ✅ Premium User 
+ ❎ Add Bot to Group 
+    ▹ *1Group Rp 10.000*
+     Expired 30 hari
+    ▹ *1Group Rp 20.000*
+     Expired 60 hari
+
+ Order | hub : owner
 `
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
            hydratedContentText: premium,
            locationMessage: { 
-           jpegThumbnail: fs.readFileSync('./media/shiraori.jpg') }, 
+           jpegThumbnail: fs.readFileSync('./media/darma.jpg') }, 
            hydratedFooterText: wm,
            hydratedButtons: [{
              urlButton: {
                displayText: 'DONASI',
-               url: 'https://saweria.co/ilmanhdyt'
+               url: 'https://wa.me/p/4487929097985377/6283106733687'
              }
 
            },

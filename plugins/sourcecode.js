@@ -7,20 +7,25 @@ const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessa
 let fs = require('fs')
 let handler = async (m) => {
 let esce = `
-Bot ini Menggunakan Script Dari
-
-https://github.com/ilmanhdyt/ShiraoriBOT-Md`
+_*>>[ 🇮🇩 SCRIPT BOT WHATSAPP 🇮🇩 ]<<*_
+_🎋Sc Bot↓_
+_*Yutup bang banyak. Tinggal pilih awokwok..*_
+*🏮Follow me On Instagram:*
+https://instagram.com/darrma23
+*🔖And visite me On:*
+https://beacons.ai/darrma
+_🎃This SC is under development_`
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
            hydratedContentText: esce,
            locationMessage: { 
-           jpegThumbnail: fs.readFileSync('./media/esce.jpg') },           
+           jpegThumbnail: fs.readFileSync('./media/scriptbot.jpg') },           
            hydratedFooterText: wm,
            hydratedButtons: [{
              urlButton: {
                displayText: '💠 Source Code',
-               url: 'https://github.com/ilmanhdyt/ShiraoriBOT-Md'
+               url: 'https://github.com'
              }
 
            },
