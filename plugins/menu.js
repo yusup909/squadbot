@@ -3,58 +3,60 @@ let fs = require('fs')
 let path = require('path')
 let levelling = require('../lib/levelling')
 let tags = {
-  'main': 'MENU UTAMA',
-  'game': 'MENU GAME',
-  'rpg': 'MENU RPG',
-  'xp': 'MENU EXP',
-  'premium': 'MENU PREMIUM',
-  'group': 'MENU GROUP',
-  'absen': 'MENU ABSEN',
-  'vote': 'MENU VOTE',
-  'owner': 'MENU OWNER',
-  'fun': 'MENU FUN',
-  'sticker': 'MENU CONVERT',
-  'maker': 'MENU MAKER',
-  'github': 'MENU GITHUB',
-  'internet': 'INTERNET',
-  'kerang': 'MENU KERANG',
-  'anime': 'MENU ANIME',
-  'downloader': 'DOWNLOADER',
-  'nsfw': 'MENU NSFW',
-  'tools': 'MENU TOOLS',
-  'advanced': 'ADVANCED',
-  'quotes': 'MENU QUOTES',
-  'info': 'MENU INFO',
+  'main': 'Main',
+  'game': 'Game',
+  'rpg': 'Rpg',
+  'xp': 'Exp',
+  'premium': 'Premium',
+  'group': 'Group menu',
+  'absen': 'Absen',
+  'vote': 'Vote',
+  'owner': 'Owner',
+  'fun': 'Fun',
+  'jadian': 'Jadian',
+  'sticker': 'Convert',
+  'maker': 'Maker',
+  'github': 'Github Menu',
+  'internet': 'Internet',
+  'kerang': 'Kerang Ajaib',
+  'anime': 'Anime',
+  'downloader': 'Downloader',
+  'nsfw': 'Nsfw',
+  'tools': 'Tolls',
+  'advanced': 'Advanced',
+  'quotes': 'Quotes',
+  'info': 'Info',
 }
 const defaultMenu = {
   before: `
-╭────ꕥ %me ꕥ────
-│✾ Version: %version
-│✾ Library: Baileys-MD
-│✾ Mode: ${global.opts['self'] ? 'Self' : 'publik'}
-│✾ Runtime: %uptime
-╰❑
-╭─❑ 「 INFO USER 」 ❑──
-│ ✾ Name: %name
-│ ✾ Status: ---
-│ ✾ Limit: %limit
-│ ✾ Money: %money
-│ ✾ Exp: %totalexp
-│ ✾ Level: %level
-│ ✾ Role: %role
-╰❑
-╭─❑ 「 INFORMASI 」 ❑──
-│ Bot ini masih tahap beta
-│ apabila ada bug/eror harap
-│ lapor ke owner
-╰❑
-%readmore`.trimStart(),
-  header: '╭─「 %category 」',
-  body: '│ • %cmd %islimit %isPremium',
-  footer: '╰────\n',
-  after: `
-*%npmname@^%version*
-${'```%npmdesc```'}
+────ꕥ WhatsAppBOT ꕥ────
+ *✾ Version:* %version
+ *✾ Library:* Baileys-MD
+ *✾ Database:* mongoDB
+ *✾ Mode:* ${global.opts['self'] ? 'Self' : 'publik'}
+ *✾Waktu:* %time
+ *✾Hari:* %week %weton
+ *✾Tanggal:* %date
+ *✾ Runtime:* %uptime
+
+❑ 「 INFO USER 」 ❑
+*✾ Name:* %name
+*✾ Limit:* %limit
+*✾ Level:* %level
+*✾ Role:* %role
+
+❑ 「 INFORMASI 」 ❑
+_Bot ini masih tahap beta_
+_apabila ada bug/eror harap_
+_lapor ke owner_
+
+_🤖Enjoy The Bot Menu_
+%readmore
+`.trimStart(),
+  header: '➤〘 %category 〙',
+  body: '• _%cmd_ %islimit %isPremium',
+  footer: '',
+  after: `⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕.
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p }) => {
@@ -162,19 +164,12 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
          hydratedTemplate: {
            hydratedContentText: text.trim(),
            locationMessage: { 
-           jpegThumbnail: fs.readFileSync('./media/shiraori.jpg') },
+           jpegThumbnail: fs.readFileSync('./media/darma.jpg') },
            hydratedFooterText: wm,
            hydratedButtons: [{
              urlButton: {
                displayText: '💠 Source Code',
-               url: 'https://github.com/ilmanhdyt/ShiraoriBOT-Md'
-             }
-
-           },
-             {
-             callButton: {
-               displayText: 'Nomor Owner',
-               PhoneNumber: '0813-5104-7727'
+               url: 'https://github.com'
              }
 
            },
