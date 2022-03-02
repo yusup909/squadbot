@@ -35,12 +35,8 @@ global.opts = new Object(yargs(process.argv.slice(2)).exitProcess(false).parse()
 // console.log({ opts })
 global.prefix = new RegExp('^[' + (opts['prefix'] || '‎xzXZ/i!#$%+£¢€¥^°=¶∆×÷π√✓©®:;?&.\\-').replace(/[|\\{}()[\]^$+*?.\-\^]/g, '\\$&') + ']')
 
-global.db = new Low(
-  /https?:\/\//.test(opts['db'] || '') ?
-    new cloudDBAdapter(opts['db']) : /mongodb/.test(opts['db']) ?
-      new mongoDB(opts['db']) :
-      new JSONFile(`${opts._[0] ? opts._[0] + '_' : ''}database.json`)
-)
+global.db = new Low(new mongoDB('mongodb+srv://kangmasDarr:anakayamm2@cluster0.y8y23.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'))
+
 global.DATABASE = global.db // Backwards Compatibility
 global.loadDatabase = async function loadDatabase() {
   if (global.db.READ) return new Promise((resolve) => setInterval(function () { (!global.db.READ ? (clearInterval(this), resolve(global.db.data == null ? global.loadDatabase() : global.db.data)) : null) }, 1 * 1000))
@@ -66,6 +62,13 @@ loadDatabase()
 global.authFile = `${opts._[0] || 'session'}.data.json`
 global.isInit = !fs.existsSync(authFile)
 const { state, saveState } = useSingleFileAuthState(global.authFile)
+
+/*const connectionOptions = {
+  printQRInTerminal: true,
+  auth: state,
+  logger: P({ prettyPrint: { levelFirst: true, ignore: 'hostname', translateTime: true },  prettifier: require('pino-pretty') }),
+  version: [2, 2204, 13]
+}*/
 
 const connectionOptions = {
   printQRInTerminal: true,
@@ -106,6 +109,11 @@ const imports = (path) => {
   } while ((!modules || (Array.isArray(modules) || modules instanceof String) ? !(modules || []).length : typeof modules == 'object' && !Buffer.isBuffer(modules) ? !(Object.keys(modules || {})).length : true) && retry <= 10)
   return modules
 }
+const logger = {
+    info: () => {},
+    warn: () => {},
+    error: () => {}
+ }
 let isInit = true
 global.reloadHandler = function (restatConn) {
   let handler = imports('./handler')
