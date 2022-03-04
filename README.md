@@ -7,21 +7,21 @@
 <a href="#"><img title="SHIRAORI BOT MULTI DEVICE" src="https://img.shields.io/badge/SHIRAORI BOT MULTI DEVICE-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 <p align="center">
-<a href="https://github.com/ilmanhdyt/ShiraoriBOT-Md"><img title="Author" src="https://img.shields.io/badge/Author-Ilman-red.svg?style=for-the-badge&logo=github"></a>
+<a href="https://github.com/darrma23/WhatsAppBOT-Md"><img title="Author" src="https://img.shields.io/badge/Author-Darma-red.svg?style=for-the-badge&logo=github"></a>
 </p>
 <p align="center">
-<a href="https://github.com/ilmanhdyt/ShiraoriBOT-Md"><img title="Followers" src="https://img.shields.io/github/followers/ilmanhdyt?color=blue&style=flat-square"></a>
-<a href="https://github.com/ilmanhdyt/ShiraoriBOT-Md"><img title="Stars" src="https://img.shields.io/github/stars/ilmanhdyt/ShiraoriBOT-Md?color=red&style=flat-square"></a>
-<a href="https://github.com/ilmanhdyt/ShiraoriBOT-Md/network/members"><img title="Forks" src="https://img.shields.io/github/forks/ilmanhdyt/ShiraoriBOT-Md?color=red&style=flat-square"></a>
-<a href="https://github.com/ilmanhdyt/ShiraoriBOT-Md/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/ilmanhdyt/ShiraoriBOT-Md?label=Watchers&color=blue&style=flat-square"></a>
+<a href="https://github.com/darrma23/WhatsAppBOT-Md"><img title="Followers" src="https://img.shields.io/github/followers/darrma23?color=blue&style=flat-square"></a>
+<a href="https://github.com/darrma23/WhatsAppBOT-Md"><img title="Stars" src="https://img.shields.io/github/stars/darrma23/WhatsAppBOT-Md?color=red&style=flat-square"></a>
+<a href="https://github.com/darrma23/WhatsAppBOT-Md/network/members"><img title="Forks" src="https://img.shields.io/github/forks/darrma23/WhatsAppBOT-Md?color=red&style=flat-square"></a>
+<a href="https://github.com/darrma23/WhatsAppBOT-Md/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/darrma23/WhatsAppBOT-Md?label=Watchers&color=blue&style=flat-square"></a>
 </p>
 
 ---
 
-# SHIRAORI BOT Whatsapp MD
+# WhatsAppBOT MD
 
 ## Information
-> ShiraoriBOT whatsapp using a Baileys library.
+> WhatsAppBOT-Md using a Baileys library.
 > Jika kamu menemukan semacam bug, harap untuk dimaklumi sementara
 >
 > • NOTE: Pastikan Jaringan kalian lancar dan device kalian bagus:v, 
@@ -32,12 +32,13 @@
 <p align="center">
   <a href="https://github.com/ilmanhdyt"><img src="https://github.com/ilmanhdyt.png?size=128" height="128" width="128" /></a>
   <a href="https://github.com/BochilGaming"><img src="https://github.com/BochilGaming.png?size=128" height="128" width="128" /></a>
+  <a href="https://github.com/BochilGaming"><img src="https://github.com/darrma23.png?size=128" height="128" width="128" /></a>
 </p>
 
 ## Tester Bot
 * Jika kamu menemukan bug jangan lupa buka Issues
-* Info Lebih Lanjut, Chat [owner-Shiraori](https://wa.me/6281351047727)
-* Kamu bisa testing fitur ShiraoriBOT [disini](https://wa.me/62895803135347?text=.menu)
+* Info Lebih Lanjut, Chat [owner-Bot](https://wa.me/6283106733687)
+* Kamu bisa testing fitur ShiraoriBOT [disini](https://wa.me/6281328552597?text=.menu)
 
 ## How To Change Menu Display
 ----
@@ -107,8 +108,8 @@ let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/shir
 * Unduh & Instal ImageMagick [`Klik Disini`](https://imagemagick.org/script/download.php)
 
 ```bash
-git clone https://github.com/ilmanhdyt/ShiraoriBOT-Md
-cd ShiraoriBOT-Md
+git clone https://github.com/darrma23/WhatsAppBOT-Md
+cd WhatsAppBOT-Md
 npm install
 npm update
 npm index
@@ -124,8 +125,8 @@ pkg install nodejs
 pkg install ffmpeg
 pkg install imagemagick
 pkg install yarn
-git clone https://github.com/ilmanhdyt/ShiraoriBOT-Md
-cd ShiraoriBOT-Md
+git clone https://github.com/darrma23/WhatsAppBOT-Md
+cd WhatsAppBOT-Md
 yarn
 npm i -g typescript
 tsc -p ./node_modules/@adiwajshing/baileys
@@ -155,10 +156,10 @@ Jika berhasil, akan memberikanmu pesan seperti: `SUCCESS: specified value was sa
 ```
 
 # Thanks to
- [![Nurutomo](https://github.com/Nurutomo.png?size=150)](https://github.com/Nurutomo) | [![Ilman](https://github.com/ilmanhdyt.png?size=150)](https://github.com/ilmanhdyt) | [![Istikmal](https://github.com/BochilGaming.png?size=150)](https://github.com/BochilGaming)
+ [![Nurutomo](https://github.com/Nurutomo.png?size=150)](https://github.com/Nurutomo) | [![Ilman](https://github.com/ilmanhdyt.png?size=150)](https://github.com/ilmanhdyt) | [![Istikmal](https://github.com/BochilGaming.png?size=150)](https://github.com/BochilGaming) | [![Darma](https://github.com/darrma23.png?size=150)](https://github.com/darrma23)
 ----|----|----
-[Nurutomo](https://github.com/Nurutomo) | [Ilman](https://github.com/ilmanhdyt) | [Istikmal](https://github.com/BochilGaming)
- Author | yg nambah fitur | yg punya sc
+[Nurutomo](https://github.com/Nurutomo) | [Ilman](https://github.com/ilmanhdyt) | [Istikmal](https://github.com/BochilGaming) | [Darrma](https://github.com/darrma23)
+ Author | yg nambah fitur | yg punya sc | yang nambah fitur
 
 ## Donate
-- [Saweria](https://saweria.co/ilmanhdyt)
+- [Saweria](https://saweria.co/darrma)
